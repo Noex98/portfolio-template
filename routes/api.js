@@ -21,9 +21,9 @@ api.post('/api/mail', (req, res) => {
 
     
     transporter.sendMail({
-        from: req.body.mail,
+        from: req.body.email,
         to: myEmail,
-        subject: req.body.subject,
+        subject: 'Portfolio mail from: ' + req.body.email,
         text: req.body.text
     }, (err, info) => {
         if (err){
