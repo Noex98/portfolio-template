@@ -16,10 +16,6 @@ const transporter = nodemailer.createTransport({
 })
 
 api.post('/api/mail', (req, res) => {
-
-    console.log(req.body)
-
-    
     transporter.sendMail({
         from: req.body.email,
         to: myEmail,
@@ -34,7 +30,6 @@ api.post('/api/mail', (req, res) => {
             res.json({succes: true})
         }
     })
-    
 })
 
 
