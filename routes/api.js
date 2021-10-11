@@ -1,7 +1,7 @@
 const express = require('express')
 const api = express.Router()
 const nodemailer = require('nodemailer')
-const myEmail = 'johannes.knickering@hotmail.com'
+const myEmail = 'skriv din email her'
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
